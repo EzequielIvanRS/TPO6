@@ -1,0 +1,55 @@
+* {
+    background-color: white;
+    width: auto;
+    height: auto;
+}
+
+header{
+    background-color: rgb(43, 92, 197);
+    width: vw;
+    height: vh;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bolder;
+    margin: 0px;
+    padding: 1%;
+    
+}
+
+p{
+    background-color: white;
+}
+
+footer{
+    position:bottom ;
+}
+
+nav, .rec{
+    background-color: rgba(29, 63, 138, 0.3); 
+}
+
+.recuadro,  [for="etq"], legend{
+    background-color: rgba(117, 151, 224, 0.795);
+}
+.subtit{
+    margin: 5px
+}
+.subtit::before{
+    content: "• "
+
+}
+
+.descr{
+    font-style: ;
+    text-align: left;
+}
+
+.rec,  [for="etq"], legend{
+    border: #000000 1px solid;
+    border-radius: 5%;
+     
+}
+
+[for="etq"]::after {
+    content="asd"
+}
