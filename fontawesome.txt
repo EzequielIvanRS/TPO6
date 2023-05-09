@@ -1,2 +1,0 @@
-<script src="https://kit.fontawesome.com/c5b95681ac.js" crossorigin="anonymous"></script>
-<i class="fa-brands fa-square-facebook"></i>
