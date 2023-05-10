@@ -2,16 +2,28 @@
     width: auto;
     height: auto;
 }
-.contenedor{
+
+.asd{
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+}
+.servicio{
+    display: flex;
     justify-content: left;
     align-items:flex-start;
-    height: 50%;
-    width: 50%;
-    min-height:100vh;
-    background-color: rgb(235, 227, 227);
+   background-color: white;
 }
+
+.contenedor{
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+    margin:30px auto; 
+}
+
 
 header{
     background-color: rgb(43, 92, 197);
@@ -41,26 +53,40 @@ nav, .navegador{
     justify-content: flex-end;
     align-items: flex-end;
     align-self: flex-end;
-    scale: 70%;
+    width: 50vw;
+    height: 50vh;
 }
 .imagen:hover{
     animation: cambiarTamaño 3s; 
 }
-.imagenlarge{
+.imagenlarge1{
+    display:flex;
+    justify-content: flex-end;
     margin-top: 0%;
     margin-left: 0%;
     padding: 0%;
     scale: 30%;
 }
+.imagenlarge2{
+    display:flex;
+    justify-content: flex-end;
+    margin-top: 0%;
+    margin-left: 0%;
+    padding: 0%;
+    scale: 50%;
+}
+.imagenlarge3{
+    display:flex;
+    justify-content: flex-end;
+    margin-top: 0%;
+    margin-left: 0%;
+    padding: 0%;
+    scale: 70%;
+}
 .recuadro,  [for="etq"], legend{
     background-color: rgba(223, 226, 235, 0.795);
 }
-.subtit{
-    display: flex;
-    flex-direction: row;
-    justify-content: auto;
-    align-items:flex-start;
-}
+
 .subtit::before{
     content: "• "
 }
