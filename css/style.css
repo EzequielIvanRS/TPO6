@@ -2,29 +2,6 @@
     width: auto;
     height: auto;
 }
-
-.asd{
-    display: flex;
-    flex-direction:column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 100%;
-}
-.servicio{
-    display: flex;
-    justify-content: left;
-    align-items:flex-start;
-   background-color: white;
-}
-
-.contenedor{
-    display: flex;
-    background-color: white;
-    justify-content: space-around;
-    margin:30px auto; 
-}
-
-
 header{
     background-color: rgb(43, 92, 197);
     color: white;
@@ -38,7 +15,7 @@ header{
 footer{
     display: flex;
     align-items: flex-end;
-    justify-content: center;
+    justify-content: space-evenly;
     background-color: rgb(25, 64, 150);
 }
 nav, .navegador{
@@ -46,6 +23,19 @@ nav, .navegador{
     display: flex;
     align-items: center;
     justify-content: flex-start;
+}
+.asd{
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    align-items: auto;
+    width: auto;
+}
+.contenedor{
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+    margin:30px auto; 
 }
 .imagen{
     display:flex;
@@ -59,45 +49,44 @@ nav, .navegador{
 .imagen:hover{
     animation: cambiarTamaño 3s; 
 }
-.imagenlarge1{
+.imagenservicio{
     display:flex;
-    justify-content: flex-end;
-    margin-top: 0%;
-    margin-left: 0%;
-    padding: 0%;
-    scale: 30%;
-}
-.imagenlarge2{
-    display:flex;
-    justify-content: flex-end;
-    margin-top: 0%;
-    margin-left: 0%;
-    padding: 0%;
+    flex-direction: row;
+    justify-content: space-around;
     scale: 50%;
 }
-.imagenlarge3{
-    display:flex;
-    justify-content: flex-end;
-    margin-top: 0%;
-    margin-left: 0%;
-    padding: 0%;
-    scale: 70%;
+.img1{
+    width: 15%;
+    height: 4%;
 }
+.img2{
+    width: 15%;
+    height: 6%;
+}
+.img3{
+    width: 15%;
+    height: 6%;
+}
+
 .recuadro,  [for="etq"], legend{
     background-color: rgba(223, 226, 235, 0.795);
+}
+
+.navegador,  [for="etq"], legend{
+    border: #07024d 1px solid;
+    border-radius: 5%;
 }
 
 .subtit::before{
     content: "• "
 }
-.navegador,  [for="etq"], legend{
-    border: #000000 1px solid;
-    border-radius: 5%;
+.iframe{
+    width: 50vw;
+    height: 50vh;
 }
 
-[for="etq"]::after {}
 
 @keyframes cambiarTamaño{
-    from {scale:70%}
-    to {scale:90%;}
+    from {scale:100%}
+    to {scale:110%;}
 }
