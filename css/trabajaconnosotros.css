@@ -25,6 +25,9 @@ nav {
   justify-content: flex-start;
   align-items: space-evenly;
 }
+section {
+  margin: 30px 10px 400px;
+}
 .navegador {
   display: flex;
   flex-direction: flex-start;
@@ -48,33 +51,22 @@ li {
 .botonnavegador a:hover {
   color: rgba(56, 59, 65, 0.849);
 }
-.contenedor {
-  display: flex;
-  background-color: white;
-  justify-content: space-around;
-  margin: 1% 2% 400px;
+.recuadro {
+  width: 15%;
+  height: 7%;
 }
-.imagenindex {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
-  align-self: flex-end;
-  width: 50vw;
-  height: 50vh;
+.mensaje {
+  height: 100px;
+  width: 500px;
 }
-.imagenindex:hover {
-  animation: cambiarTamaño 3s;
-}
-.subtit::before {
-  content: "• ";
+.recuadro,
+[for="etq"],
+legend {
+  background-color: rgba(223, 226, 235, 0.795);
 }
 
-@keyframes cambiarTamaño {
-  from {
-    scale: 100%;
-  }
-  to {
-    scale: 105%;
-  }
+[for="etq"],
+legend {
+  border: #07024d 1px solid;
+  border-radius: 5%;
 }

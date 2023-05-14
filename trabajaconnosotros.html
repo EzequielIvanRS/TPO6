@@ -1,44 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/a10f293ea1.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/trabajaconnosotros.css" />
+    <script
+      src="https://kit.fontawesome.com/a10f293ea1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <script src="js/app.js"></script>
     <title>Evequoz</title>
-</head>
-<body>
+  </head>
+
+  <body>
     <header>Evequoz</header>
-    <nav><a href="index.html" class="navegador">Home </a><a href="servicios.html" class="navegador">Servicios</a><a href="trabajaconnosotros.html" class="navegador">Trabaja con nosotros </a><a href="contacto.html" class="navegador">Contacto</a></nav>
-    <br>
-    <br>
-    <form action="show_data.html" target:"_blank">
+    <nav>
+      <ul class="navegador">
+        <li class="botonnavegador"><a href="index.html">Home</a></li>
+        <li class="botonnavegador"><a href="servicios.html">Servicios</a></li>
+        <li class="botonnavegador">
+          <a href="trabajaconnosotros.html">Empleo</a>
+        </li>
+        <li class="botonnavegador"><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <section>
+      <form
+        action="https://formspree.io/f/moqzblpa"
+        method="POST"
+        onsubmit="return validar();"
+      >
         <fieldset class="recuadro">
-        <legend>Trabajá con nosotros</legend>
-        <label for="etq">Nombre: </label>
-        <input type="text" name="nombre" size="30" placeholder="Escriba su nombre aqui..."><br>
-        <br>
-        <label for="etq">Mail: </label><input type="email" name="mail" size="30" ><br>
-        <label for="etq">Mensaje: </label><br>
-        <textarea type="text" placeholder="Escriba su mensaje aqui..." maxlength="2000" required="required" class="mensaje"></textarea>
-        <br><input type="submit"> <input type="reset">
-        </fieldset>    
-    </form>
-   
-    
-    
-    
-    
+          <legend>Trabaje con nosotros</legend>
+          <label for="etq">Nombre: </label>
+          <input
+            type="text"
+            name="nombre"
+            id="nombre"
+            size="30"
+            placeholder="Escriba su nombre aqui..."
+          /><label id="msj"></label><br />
+          <label for="etq">Mail: </label
+          ><input
+            type="email"
+            name="mail"
+            id="mail"
+            placeholder="Escriba su e-mail aqui..."
+            size="30"
+          /><br />
+          <label for="etq" id="mensaje">Mensaje: </label><br />
+          <textarea
+            type="text"
+            id="mensaje"
+            placeholder="Escriba su mensaje aqui..."
+            maxlength="2000"
+            required="required"
+            class="mensaje"
+          ></textarea
+          ><br /><input type="submit" />
+          <input type="reset" />
+        </fieldset>
+      </form>
+    </section>
+
     <footer>
-        <i class="fa-sharp fa-solid fa-phone"></i><span>(011) 4431-5456</span><br>
-        <i class="fa-solid fa-location-dot"></i><span>Neuquén 1069 - CABA</span><br>
-        <i class="fa-solid fa-envelope"></i><a
-            href="mailto:ventas@evequoz.com.ar?subject=contacto">ventas@evequoz.com.ar</a>
-        COPYRIGHT © 2023
-    </footer>    
-</body>
+      <i class="fa-sharp fa-solid fa-phone">(011) 4431-5456</i><br />
+      <i class="fa-solid fa-location-dot">Neuquén 1069 - CABA</i><br />
+      <i class="fa-solid fa-envelope"
+        ><a href="mailto:ventas@evequoz.com.ar?subject=contacto"
+          >ventas@evequoz.com.ar</a
+        ></i
+      >
+      COPYRIGHT © 2023
+    </footer>
+  </body>
 </html>
