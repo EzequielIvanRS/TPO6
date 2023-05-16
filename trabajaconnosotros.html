@@ -31,45 +31,46 @@
         <li class="botonnavegador"><a href="contacto.html">Contacto</a></li>
       </ul>
     </nav>
-    <section>
-      <form
-        action="https://formspree.io/f/moqzblpa"
-        method="POST"
-        onsubmit="return validar();"
-      >
-        <fieldset class="recuadro">
-          <legend>Trabaje con nosotros</legend>
-          <label for="etq">Nombre: </label>
-          <input
-            type="text"
-            name="nombre"
-            id="nombre"
-            size="30"
-            placeholder="Escriba su nombre aqui..."
-          /><label id="msj"></label><br />
-          <label for="etq">Mail: </label
-          ><input
-            type="email"
-            name="mail"
-            id="mail"
-            placeholder="Escriba su e-mail aqui..."
-            size="30"
-          /><br />
-          <label for="etq" id="mensaje">Mensaje: </label><br />
-          <textarea
-            type="text"
-            id="mensaje"
-            placeholder="Escriba su mensaje aqui..."
-            maxlength="2000"
-            required="required"
-            class="mensaje"
-          ></textarea
-          ><br /><input type="submit" />
-          <input type="reset" />
-        </fieldset>
-      </form>
-    </section>
-
+    <div class="decoracion">
+      <section>
+        <form
+          action="https://formspree.io/f/moqzblpa"
+          method="POST"
+          onsubmit="return validar();"
+        >
+          <fieldset class="recuadro">
+            <legend>Trabaje con nosotros</legend>
+            <label for="etq">Nombre: </label>
+            <input
+              type="text"
+              name="nombre"
+              id="nombre"
+              size="30"
+              placeholder="Escriba su nombre aqui..."
+            /><label id="msj"></label><br />
+            <label for="etq">Mail: </label
+            ><input
+              type="email"
+              name="mail"
+              id="mail"
+              placeholder="Escriba su e-mail aqui..."
+              size="30"
+            /><br />
+            <label for="etq" id="mensaje">Mensaje: </label><br />
+            <textarea
+              type="text"
+              id="mensaje"
+              placeholder="Escriba su mensaje aqui..."
+              maxlength="2000"
+              required="required"
+              class="mensaje"
+            ></textarea
+            ><br /><input type="submit" />
+            <input type="reset" />
+          </fieldset>
+        </form>
+      </section>
+    </div>
     <footer>
       <i class="fa-sharp fa-solid fa-phone">(011) 4431-5456</i><br />
       <i class="fa-solid fa-location-dot">Neuquén 1069 - CABA</i><br />

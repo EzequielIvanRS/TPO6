@@ -1,34 +1,34 @@
-*{  
-    width: auto;
-    height: auto;
+* {
+  width: auto;
+  height: auto;
 }
-header{
-    background-color: rgb(43, 92, 197);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 65px;
-    font-weight: bolder;
-    padding: 2%;   
+header {
+  background-color: rgb(43, 92, 197);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 65px;
+  font-weight: bolder;
+  padding: 2%;
 }
-footer{
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-evenly;
-    background-color: rgb(25, 64, 150);
-    padding: 3%
+footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  background-color: rgb(25, 64, 150);
+  padding: 3%;
 }
-nav{
-    background-color: rgba(29, 63, 138, 0.5); 
-    display: flex;
-    justify-content: flex-start;
-    align-items: space-evenly;
+nav {
+  background-color: rgba(29, 63, 138, 0.5);
+  display: flex;
+  justify-content: flex-start;
+  align-items: space-evenly;
 }
-.navegador{
-    display: flex;
-    flex-direction: flex-start;
-    align-items: flex-start;
+.navegador {
+  display: flex;
+  flex-direction: flex-start;
+  align-items: flex-start;
 }
 .botonnavegador,
 li {
@@ -41,43 +41,58 @@ li {
   width: 80%;
   height: 80%;
 }
-.botonnavegador a{
-    text-decoration: none;
-    color: white;
+.botonnavegador a {
+  text-decoration: none;
+  color: white;
 }
-.botonnavegador a:hover{
-    color:rgba(56, 59, 65, 0.849)
+.botonnavegador a:hover {
+  color: rgba(56, 59, 65, 0.849);
 }
-.seccion{
-    display: flex;
-    flex-direction:column;
-    justify-content: flex-start;
-    align-items: auto;
-    width: auto;
+.decoracion,
+.decoracion > section {
+  background-color: rgb(190, 190, 250);
 }
-.imagenservicio{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+.seccion {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: auto;
+  width: auto;
 }
-.img{
-    scale: 50%;
-    height: 300px;
-    width: 300px;
+.imagenservicio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
-.titulo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: underline;
+.img {
+  scale: 50%;
+  height: 300px;
+  width: 300px;
+}
+.titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: underline;
+}
+.subtit::before,
+.listarubros::before {
+  content: "• ";
+}
+.listarubros {
+  margin: 0 10px 0;
+  border: none;
+  background-color: rgb(190, 190, 250);
+}
+.img:hover {
+  animation: cambiarTamaño 1.5s;
+}
 
-}
-.subtit::before, .listarubros::before{
-    content: "• "
-}
-.listarubros{
-    margin: 0 10px 0;
-    background-color: white;
-    border: none;
-
+@keyframes cambiarTamaño {
+  from {
+    scale: 100%;
+  }
+  to {
+    scale: 105%;
+  }
 }

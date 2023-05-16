@@ -48,6 +48,11 @@ li {
 .botonnavegador a:hover {
   color: rgba(56, 59, 65, 0.849);
 }
+.decoracion,
+.decoracion > section {
+  display: flex;
+  background-color: rgb(190, 190, 250);
+}
 .contenedorcontacto {
   display: flex;
   flex-direction: column;

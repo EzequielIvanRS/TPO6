@@ -51,6 +51,11 @@ li {
 .botonnavegador a:hover {
   color: rgba(56, 59, 65, 0.849);
 }
+.decoracion,
+.decoracion > section {
+  display: flex;
+  background-color: rgb(190, 190, 250);
+}
 .recuadro {
   width: 15%;
   height: 7%;
@@ -59,14 +64,13 @@ li {
   height: 100px;
   width: 500px;
 }
-.recuadro,
+.recuadro {
+  height: 210px;
+  width: 400px;
+}
 [for="etq"],
 legend {
   background-color: rgba(223, 226, 235, 0.795);
-}
-
-[for="etq"],
-legend {
   border: #07024d 1px solid;
   border-radius: 5%;
 }
