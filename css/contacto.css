@@ -1,6 +1,7 @@
 * {
   width: auto;
   height: auto;
+  font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
 }
 header {
   background-color: rgb(43, 92, 197);
@@ -18,6 +19,7 @@ footer {
   justify-content: space-evenly;
   background-color: rgb(25, 64, 150);
   padding: 3%;
+  color: white;
 }
 nav {
   background-color: rgba(29, 63, 138, 0.5);
