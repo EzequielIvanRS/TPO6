@@ -224,12 +224,21 @@ li {
     height: 10%;
     width: 100%;
   }
+  footer {
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    background-color: rgb(25, 64, 150);
+    padding: 3%;
+    color: white;
+  }
 }
 @keyframes cambiarTamaño {
   from {
     scale: 100%;
   }
   to {
-    scale: 105%;
+    scale: 103%;
   }
 }
