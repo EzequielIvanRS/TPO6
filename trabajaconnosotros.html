@@ -36,42 +36,23 @@
     
     <div class="decoracion">
       <section>
-        <form
-          action="https://formspree.io/f/moqzblpa"
-          method="POST"
-          onsubmit="return validar();"
-        >
+        <form method="POST" action="https://formspree.io/f/moqzblpa" onsubmit="return validar();">
           <fieldset class="recuadro">
             <legend>Trabaje con nosotros</legend>
-            <label for="etq">Nombre: </label>
-            <input
-              type="text"
-              name="nombre"
-              id="nombre"
-              size="30"
-              placeholder="Escriba su nombre aqui..."
-            /><label id="msjvalidacion1"></label><br />
-            <label for="etq">E-mail: </label
-            ><input
-              type="email"
-              name="mail"
-              id="mail"
-              placeholder="Escriba su e-mail aqui..."
-              size="30"
-            /><label id="msjvalidacion2"></label><br />
-            <label for="etq">Mensaje: </label><br />
-            <textarea
-              type="text"
-              id="mensaje"
-              placeholder="Escriba su mensaje aqui..."
-              maxlength="2000"
-              class="mensajee"
-            ></textarea
-            ><label id="msjvalidacion3"></label> <br />
+            <label for="etq">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" size="30" placeholder="Escriba su nombre aquí..." />
+            <label id="msjvalidacion1"></label><br />
+            <label for="etq">E-mail:</label>
+            <input type="email" name="mail" id="mail" placeholder="Escriba su e-mail aquí..." size="30" />
+            <label id="msjvalidacion2"></label><br />
+            <label for="etq">Mensaje:</label><br />
+            <textarea type="text" id="mensaje" placeholder="Escriba su mensaje aquí..." maxlength="2000" class="mensajee"></textarea>
+            <label id="msjvalidacion3"></label><br />
             <input type="submit" />
             <input type="reset" />
           </fieldset>
         </form>
+        
       </section>
     </div>
     <footer>
